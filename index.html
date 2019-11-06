@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>My Resume</title>
 
@@ -14,6 +15,124 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  
+  <div class="container">
+    <header>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="https://premputtegowda.github.io" target="_blank">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <section class="main-section">
+      <div class="main-image-container">
+        <img src="images/resume.jpg" alt="My Resume">
+       
+      </div>
+      <div class="main-text-container">
+        <h1>Prem Puttegowda - Web Dev</h1>
+        <h3>Technology is my jam</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, facere quas laudantium quo maiores quisquam dignissimos alias exercitationem voluptatum dolorem accusamus quidem, quis nihil accusantium nulla. Necessitatibus nisi voluptatibus ipsum.</p>
+        <a href="#" class="button">Let's team up</a>
+      </div>
+
+    </section>
+
+    <!--Middle Section-->
+    <section class="middle-section">
+
+      <div class="mid-sec-text">
+      <h2>Listen up</h2>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta itaque debitis accusamus et animi autem cupiditate eum dolores perspiciatis obcaecati excepturi, tempora iure placeat recusandae dolore eligendi laboriosam a enim.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta itaque debitis accusamus et animi autem cupiditate eum dolores perspiciatis obcaecati excepturi, tempora iure placeat recusandae dolore eligendi laboriosam a enim</div>
+      <div class="mid-sec-text">
+        
+        <h3>Stuff I am good at</h3>
+        <table>
+          <tr>
+            <td>Disc Golf</td>
+          </tr>
+          <tr>
+            <td>Coding up UI</td>
+          </tr>
+          <tr>
+            <td>Playing lots of video games</td>
+          </tr>
+          <tr>
+            <td>Using bootstrap grid</td>
+          </tr>
+          <tr>
+            <td>Taking long naps</td>
+          </tr>
+        </table>
+    
+      </div>
+    </section>
+    
+    <section class="bottom-sec">
+      <h2>Work History</h2>
+      <table>
+        <tr>
+          <th>Yrs</th>
+          <th>Company</th>
+          <th>Title</th>
+          <th>Tech Used</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>PayPal</td>
+          <td>Product Lead</td>
+          <td>javascript</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Ebay</td>
+          <td>Analyst</td>
+          <td>.NET</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>AT&T</td>
+          <td>Analyst</td>
+          <td>.NET</td>
+        </tr>
+      </table>
+    </section>
+    <!--contact form-->
+
+  <section class="contact-form" id="contact">
+    <div>
+      <h2>Contact</h2>
+      <form method="post" action="#">
+        <div class="fields">
+          <div class="field half">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" />
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="4"></textarea>
+          </div>
+        </div>
+        <div>
+          <li><input type="submit" value="Send Message" class="primary" /></li>
+          
+        </div>
+      </form>
+    </div>
+  </section>
+        
+
+    <!--Footer-->
+    <footer>
+      <p>Copywright Awesomeness 2019</p>
+    </footer>
+      
+    
+  </div>
 </body>
 </html>

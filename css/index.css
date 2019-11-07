@@ -1,1 +1,325 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+html,
+body {
+  height: 100%;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+body {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-size: 1.1rem;
+  font-family: 'Lato', sans-serif;
+}
+section {
+  margin: 2%;
+}
+h1 {
+  font-size: 3.2rem;
+}
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+}
+h2 {
+  font-size: 2.5rem;
+}
+@media screen and (max-width: 500px) {
+  h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+}
+h3 {
+  font-size: 1.7rem;
+}
+@media screen and (max-width: 500px) {
+  h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+}
+h4 {
+  font-size: 1rem;
+}
+h1,
+h2,
+h3,
+p {
+  padding-bottom: 2%;
+}
+table {
+  width: 100%;
+}
+td,
+th {
+  padding: 2%;
+  text-align: left;
+}
+th {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+div.container {
+  padding: 2%;
+}
+header {
+  padding: 2%;
+  display: flex;
+  justify-content: flex-end;
+}
+header nav {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+header nav a {
+  text-decoration: none;
+  color: #424141;
+}
+@media screen and (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+}
+section.main-section {
+  background: #b3b3b3;
+  padding: 5%;
+}
+section.main-section div.main-image-container img {
+  width: 50%;
+}
+@media screen and (max-width: 500px) {
+  section.main-section div.main-image-container img {
+    display: none;
+  }
+}
+section.main-section a.button {
+  width: 20%;
+  text-decoration: none;
+  display: block;
+  color: white;
+  background: black;
+  padding: 2%;
+  text-align: center;
+  border-radius: 3%;
+}
+@media screen and (max-width: 500px) {
+  section.main-section a.button {
+    width: 100%;
+  }
+}
+section.middle-section {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 500px) {
+  section.middle-section {
+    flex-wrap: wrap;
+  }
+}
+section.middle-section div {
+  width: 48%;
+}
+@media screen and (max-width: 500px) {
+  section.middle-section div {
+    width: 100%;
+  }
+}
+section.middle-section div table {
+  width: 100%;
+}
+section.middle-section div table td {
+  border: 1px grey solid;
+}
+section.bottom-sec table {
+  width: 100%;
+}
+section.bottom-sec table tr:nth-child(even) {
+  background-color: #dddddd;
+}
+section.bottom-sec table tr:nth-child(even) th,
+section.bottom-sec table tr:nth-child(even) td {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+section.contact-form form {
+  background: lightgrey;
+  padding: 2%;
+}
+section.contact-form form input[type=text] {
+  padding: 2%;
+  border: 1px solid #ccc;
+  border-radius: 2%;
+  width: 100%;
+}
+section.contact-form form textarea {
+  padding: 2%;
+  border: 1px solid #ccc;
+  border-radius: 2%;
+  width: 100%;
+}
+section.contact-form form .primary {
+  width: 20%;
+  text-decoration: none;
+  display: block;
+  color: white;
+  background: black;
+  padding: 2%;
+  text-align: center;
+  border-radius: 3%;
+}
+@media screen and (max-width: 500px) {
+  section.contact-form form .primary {
+    width: 100%;
+  }
+}
+footer {
+  background: black;
+  text-align: center;
+  padding: 3%;
+  color: white;
+}
